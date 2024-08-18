@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: stock-exchange
+
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: admin
+    password: welcome
+    driverClassName: org.h2.Driver
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    #properties:
+      #javax.persistence.schema-generation.create-source: metadata
+      #javax.persistence.schema-generation.scripts.action: create
+      #javax.persistence.schema-generation.scripts.create-target: create.sql
+
+  security:
+    user:
+      name: admin
+      password: welcome
+
+settings:
+  market-live-threshold: 5
